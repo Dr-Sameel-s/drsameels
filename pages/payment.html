@@ -373,9 +373,9 @@
             physiotherapy consultation using UPI</p>
         </div>
 
-        <div class="bg-white rounded-2xl shadow-lg p-6 md:p-8">
+        <div class="bg-white rounded-2xl shadow-lg p-4 sm:p-6 md:p-8">
           <!-- User Information Form -->
-          <div class="mt-8 p-6 bg-gray-50 rounded-xl">
+          <div class="p-4 sm:p-6 bg-gray-50 rounded-xl">
             <h3 class="text-lg font-semibold text-gray-900 mb-4">Patient Information</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
@@ -418,41 +418,41 @@
             </div>
           </div>
 
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 mt-6 sm:mt-8">
             <!-- UPI QR Code Section -->
             <div class="flex flex-col items-center">
-              <h2 class="text-xl font-bold text-gray-900 mb-4">Scan UPI QR Code</h2>
+              <h2 class="text-lg sm:text-xl font-bold text-gray-900 mb-4">Scan UPI QR Code</h2>
               <div class="upi-qr-container">
                 <img src="../scanner.jpeg" alt="UPI QR Code Scanner"
-                  class="w-48 h-48 object-contain rounded-lg shadow-md">
+                  class="w-40 h-40 sm:w-48 sm:h-48 object-contain rounded-lg shadow-md">
               </div>
-              <p class="text-sm text-gray-600 mt-4 text-center">Open your UPI app (Google Pay, PhonePe, Paytm, etc.) and
+              <p class="text-xs sm:text-sm text-gray-600 mt-4 text-center px-2">Open your UPI app (Google Pay, PhonePe, Paytm, etc.) and
                 scan this QR code to make payment</p>
             </div>
 
             <!-- Payment Details Section -->
-            <div>
-              <h2 class="text-xl font-bold text-gray-900 mb-4">Payment Details</h2>
+            <div class="mt-6 md:mt-0">
+              <h2 class="text-lg sm:text-xl font-bold text-gray-900 mb-4">Payment Details</h2>
 
-              <div class="upi-info-box mb-6">
-                <h3 class="font-semibold text-gray-900 mb-2">UPI ID:</h3>
-                <div class="flex items-center justify-between bg-white p-3 rounded-lg border">
-                  <span class="font-mono text-gray-800 break-all">9600711895@ibl</span>
+              <div class="upi-info-box mb-4 sm:mb-6">
+                <h3 class="font-semibold text-gray-900 mb-2 text-sm sm:text-base">UPI ID:</h3>
+                <div class="flex items-center justify-between bg-white p-2 sm:p-3 rounded-lg border">
+                  <span class="font-mono text-gray-800 break-all text-sm">9600711895@ibl</span>
                   <button id="copy-upi-id" class="text-green-600 hover:text-green-700 ml-2">
                     <i data-lucide="copy" class="h-5 w-5"></i>
                   </button>
                 </div>
               </div>
 
-              <div class="mb-6">
-                <h3 class="font-semibold text-gray-900 mb-2">Amount to Pay:</h3>
-                <div class="text-2xl font-bold text-green-600">₹500</div>
-                <p class="text-sm text-gray-600 mt-1">Consultation fee for physiotherapy session</p>
+              <div class="mb-4 sm:mb-6">
+                <h3 class="font-semibold text-gray-900 mb-2 text-sm sm:text-base">Amount to Pay:</h3>
+                <div class="text-xl sm:text-2xl font-bold text-green-600">₹500</div>
+                <p class="text-xs sm:text-sm text-gray-600 mt-1">Consultation fee for physiotherapy session</p>
               </div>
 
-              <div class="mb-6">
-                <h3 class="font-semibold text-gray-900 mb-2">Payment Instructions:</h3>
-                <ol class="list-decimal list-inside space-y-1 text-sm text-gray-600">
+              <div class="mb-4 sm:mb-6">
+                <h3 class="font-semibold text-gray-900 mb-2 text-sm sm:text-base">Payment Instructions:</h3>
+                <ol class="list-decimal list-inside space-y-1 text-xs sm:text-sm text-gray-600">
                   <li>Scan QR code with your UPI app or copy the UPI ID</li>
                   <li>Enter the amount ₹500 (if not pre-filled)</li>
                   <li>Confirm the payment details</li>
@@ -460,15 +460,15 @@
                 </ol>
               </div>
 
-              <div class="flex flex-col sm:flex-row gap-3">
+              <div class="flex flex-col gap-2 sm:flex-row sm:gap-3">
                 <button id="payment-verified-btn"
-                  class="flex-1 bg-gradient-to-r from-green-500 to-green-400 text-white py-3 px-4 rounded-lg font-semibold hover:shadow-lg transition-all duration-200 flex items-center justify-center">
-                  <i data-lucide="check-circle" class="h-5 w-5 mr-2"></i>
+                  class="flex-1 bg-gradient-to-r from-green-500 to-green-400 text-white py-2.5 sm:py-3 px-3 sm:px-4 rounded-lg font-semibold hover:shadow-lg transition-all duration-200 flex items-center justify-center text-sm sm:text-base">
+                  <i data-lucide="check-circle" class="h-4 w-4 sm:h-5 sm:w-5 mr-2"></i>
                   Mark Payment as Complete
                 </button>
                 <button id="show-payment-options"
-                  class="flex-1 border border-green-500 text-green-600 py-3 px-4 rounded-lg font-semibold hover:bg-green-50 transition-all duration-200 flex items-center justify-center">
-                  <i data-lucide="smartphone" class="h-5 w-5 mr-2"></i>
+                  class="flex-1 border border-green-500 text-green-600 py-2.5 sm:py-3 px-3 sm:px-4 rounded-lg font-semibold hover:bg-green-50 transition-all duration-200 flex items-center justify-center text-sm sm:text-base">
+                  <i data-lucide="smartphone" class="h-4 w-4 sm:h-5 sm:w-5 mr-2"></i>
                   Other Options
                 </button>
               </div>
@@ -476,22 +476,22 @@
           </div>
 
           <!-- Alternative Payment Methods -->
-          <div id="payment-options-panel" class="mt-8 p-4 bg-gray-50 rounded-xl hidden">
-            <h3 class="font-semibold text-gray-900 mb-3">Alternative Payment Methods:</h3>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <div class="bg-white p-4 rounded-lg border text-center">
-                <i data-lucide="smartphone" class="h-8 w-8 text-green-500 mx-auto mb-2"></i>
-                <h4 class="font-medium text-gray-900">Google Pay</h4>
+          <div id="payment-options-panel" class="mt-6 sm:mt-8 p-3 sm:p-4 bg-gray-50 rounded-xl hidden">
+            <h3 class="font-semibold text-gray-900 mb-3 text-sm sm:text-base">Alternative Payment Methods:</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
+              <div class="bg-white p-3 sm:p-4 rounded-lg border text-center">
+                <i data-lucide="smartphone" class="h-6 w-6 sm:h-8 sm:w-8 text-green-500 mx-auto mb-2"></i>
+                <h4 class="font-medium text-gray-900 text-sm sm:text-base">Google Pay</h4>
                 <p class="text-xs text-gray-600">9600711895@ibl</p>
               </div>
-              <div class="bg-white p-4 rounded-lg border text-center">
-                <i data-lucide="smartphone" class="h-8 w-8 text-green-500 mx-auto mb-2"></i>
-                <h4 class="font-medium text-gray-900">PhonePe</h4>
+              <div class="bg-white p-3 sm:p-4 rounded-lg border text-center">
+                <i data-lucide="smartphone" class="h-6 w-6 sm:h-8 sm:w-8 text-green-500 mx-auto mb-2"></i>
+                <h4 class="font-medium text-gray-900 text-sm sm:text-base">PhonePe</h4>
                 <p class="text-xs text-gray-600">9600711895@ibl</p>
               </div>
-              <div class="bg-white p-4 rounded-lg border text-center">
-                <i data-lucide="smartphone" class="h-8 w-8 text-green-500 mx-auto mb-2"></i>
-                <h4 class="font-medium text-gray-900">Paytm</h4>
+              <div class="bg-white p-3 sm:p-4 rounded-lg border text-center">
+                <i data-lucide="smartphone" class="h-6 w-6 sm:h-8 sm:w-8 text-green-500 mx-auto mb-2"></i>
+                <h4 class="font-medium text-gray-900 text-sm sm:text-base">Paytm</h4>
                 <p class="text-xs text-gray-600">9600711895@ibl</p>
               </div>
             </div>
